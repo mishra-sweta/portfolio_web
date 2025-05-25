@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweta's Porfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/profile2.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Sweta Mishra</h1>
+
+            <p class="title">Full-stack developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >swetamishra.liluah@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+91 7003216723</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">Sept 23, 1999</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Bengaluru, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/mishra-sweta" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/sweta-mishra-something/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a MERN Stack Developer skilled in
+              <b>React, Node.js, Express, MongoDB, and JavaScript.</b>
+              I thrive on solving problems and writing clean, high-quality code
+              that just works. Driven by curiosity, I'm always exploring new
+              tools and techniques to level up!
+            </p>
+
+            <p>
+              Beyond the screen, I enjoy reading, journaling, sketching,
+              exploring tech trends, and occasionally getting lost in a good
+              podcast. Always learning, always building.
+            </p>
+          </section>
+
+          <!-- What I'm doing section -->
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Frontend Development</h4>
+                  <p class="service-item-text">
+                    Creating dynamic and responsive web applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend Development</h4>
+                  <p class="service-item-text">
+                    Building robust and scalable server-side solutions.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+                  <p class="service-item-text">
+                    Developing versatile and efficient web applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Database Management</h4>
+                  <p class="service-item-text">
+                    I efficiently manage both SQL and NoSQL databases to ensure
+                    optimized data storage and retrieval.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3">Experience</h3>
+              </div>
+
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Business Analyst + Frontend Developer, Enfund
+                  </h4>
+                  <span>Mar 2024 — Dec 2024</span>
+                  <p class="timeline-text">
+                    Led landing page development for campaigns using React.js,
+                    Webflow, and FlutterFlow. Built dashboards, email flows, and
+                    lead forms using HubSpot and Canva. Scraped data using
+                    Python and Beautiful Soup.
+                  </p>
+                </li>
+
+                <li class="timeline-item">
+                  <h4 class="h4 timeline-item-title">
+                    Software Engineer, Persistent Systems
+                  </h4>
+                  <span>Jul 2022 — Oct 2023</span>
+                  <p class="timeline-text">
+                    Developed scalable frontend features for a logistics
+                    platform. Built real-time tracking UI and integrated
+                    MongoDB-backed REST APIs.
+                  </p>
+                </li>
+              </ol>
+            </section>
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Academy of Technology, Kolkata
+                </h4>
+                <span>2018 — 2022</span>
+                <p class="timeline-text">
+                  B.Tech in Computer Science and Engineering | CGPA: 9.28
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Shri Shikshayatan School, Kolkata
+                </h4>
+                <span>2016 — 2017</span>
+                <p class="timeline-text">
+                  Class XII - CBSE | Percentage: 83.2%
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML, CSS, JavaScript, Tailwind CSS</h5>
+                  <data value="80">95%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React.js</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Redux Toolkit</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Node.js</h5>
+                  <data value="75">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MongoDB & MySQL</h5>
+                  <data value="75">75%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://usedevtinder.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/devtinder.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Dev Tinder</h3>
+
+                  <p class="project-category">Full Stack</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://netfliqgpt.netlify.app/ ">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/netflixgpt.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">NetflixGPT</h3>
+
+                  <p class="project-category">Frontend</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://usesnacktrack.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/snacktrack.png"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Snack Track</h3>
+
+                  <p class="project-category">Frontend</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31103.86407507677!2d77.61761196119939!3d12.972938439904105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a418770391%3A0xb50f46b826501036!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1748175304456!5m2!1sen!2sin"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
